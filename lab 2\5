@@ -1,0 +1,14 @@
+n = int(input())
+s = []
+m = []
+for i in range(n):
+  a = input()
+  b = a.split()
+  if (int(b[1]) > 40) or (int(b[1]) <20):
+  s.append(b[0])
+  else:
+  m.append(b[0])
+s.sort()
+m.sort()
+print("Команда 1", *s)
+print("Команда 2", *m)
